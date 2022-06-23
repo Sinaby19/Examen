@@ -1,6 +1,6 @@
 s=True
 while s:
-    print("Dame la serie que quieres: (A,B,C,D)")
+    print("Dame la serie que quieres: (A,B,C)")
     serie = input()
     if serie== "A":
         s=False
@@ -18,6 +18,10 @@ while s:
             if suma == 270:
                 print("Compra completada")
                 n = False
+            while suma>270:
+                print("Tome su cambio de $10")
+                print(suma)
+                suma= suma-10
     
     if serie== "B":
         s=False
@@ -34,9 +38,13 @@ while s:
                 n = False
             if suma == 340:
                 print("Compra completada")
-                n = False
+            n = False
+            while suma>340:
+                print("Tome su cambio de $10")
+                print(suma)
+                suma= suma-10
     
-    if serie== "A":
+    if serie== "C":
         s=False
         n = True
         moneda = 0
@@ -52,3 +60,7 @@ while s:
             if suma == 390:
                 print("Compra completada")
                 n = False
+            while suma>390:
+                print("Tome su cambio de $10")
+                print(suma)
+                suma= suma-10
